@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 1823128f20579c0c70acfb394d84d5f2997aafb9..74b1278e1d56a2220e004ea19f8e79b25bbdd8d4 100644
+--- a/package.json
++++ b/package.json
+@@ -18,6 +18,8 @@
+     "LICENSE_APACHE",
+     "LICENSE_MIT"
+   ],
++  "type": "module",
++  "main": "voy_search.js",
+   "module": "voy_search.js",
+   "homepage": "https://github.com/tantaraio/voy",
+   "types": "voy_search.d.ts",

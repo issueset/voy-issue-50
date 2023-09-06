@@ -1,0 +1,31 @@
+{
+  "name": "pkg-name",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "run:node": "esno javascript/entry-node.ts",
+    "run:browser": "vite",
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.21.6",
+    "@ocavue/eslint-config": "^1.2.3",
+    "@types/node": "^20.5.7",
+    "eslint": "^8.48.0",
+    "esno": "^0.17.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-wasm": "^3.2.2"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.5.4",
+    "comlink": "^4.4.1",
+    "voy-search": "^0.6.2"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "voy-search@0.6.2": "patches/voy-search@0.6.2.patch"
+    }
+  }
+}
